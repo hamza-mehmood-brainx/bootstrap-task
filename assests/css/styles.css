@@ -1,0 +1,38 @@
+:root {
+  --primary-color: #0b4f9a;
+  --secondary-color: #2bb24c;
+  --nav-link-color: #3c7aae;
+  --nav-link-hover-color: #8cafcf;
+}
+
+.main-body {
+  font-family: "Lato", sans-serif;
+}
+
+.navbar {
+  border-top: 5px solid var(--primary-color);
+}
+
+.navbar .breadcrumb {
+  font-size: 16px;
+  font-weight: 500;
+}
+
+.navbar .breadcrumb .breadcrumb-item .nav-link {
+  color: var(--nav-link-color);
+}
+
+.navbar .breadcrumb .breadcrumb-item .nav-link:hover {
+  color: var(--nav-link-hover-color);
+}
+
+/* Chat btn styles */
+.main-body .chat-btn {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  background-color: var(--primary-color);
+  color: white;
+  border-radius: 100px;
+  z-index: 1000;
+}
