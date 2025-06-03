@@ -17,6 +17,7 @@
   --photos-overlay-hover: #d9d9dab9;
   --subscribe-tooltip-color: #565454;
   --reviews-btn-hover: #1d8b6f;
+  --gray-text-color: #333;
 }
 
 img {
@@ -252,7 +253,6 @@ img {
   height: 100%;
   width: 100%;
   font-size: 16px;
-  letter-spacing: 1px;
 }
 
 .package-button-main .package-button:hover,
@@ -310,7 +310,6 @@ img {
   color: var(--primary-color);
   font-size: 14px;
   font-weight: 900;
-  text-shadow: 1px 0 currentColor;
 }
 
 /* ******************Community Photos Styles****************** */
@@ -425,22 +424,23 @@ img {
 }
 .product-description-section .decription-heading {
   font-size: 20px;
-  color: var(--black-color);
+  color: var(--gray-text-color);
   font-weight: 600;
   letter-spacing: 2px;
 }
 
 .product-description-section .description-text {
   font-size: 16px;
-  color: var(--black-color);
+  color: var(--gray-text-color);
   margin-bottom: 5px;
   list-style: disc outside;
+  font-weight: 700;
 }
 
 .product-description-section .description-list {
   opacity: 1;
   font-weight: 500;
-  color: var(--gray-color);
+  color: var(--gray-text-color);
 }
 
 /* Features box section styling */
@@ -522,6 +522,7 @@ img {
   width: 100%;
   background-color: var(--background-color);
   color: var(--white-color);
+  border-bottom: 8px solid var(--secondary-color);
 }
 
 .video-title {
@@ -703,5 +704,41 @@ img {
 
   .videos-section {
     margin-right: 0;
+  }
+
+  .subscribe-package-main .package-pack-amount {
+    margin-bottom: 0;
+  }
+
+  .subscribe-package-main .subscribe-price {
+    font-size: 14px;
+  }
+
+  .subscribe-package-main .subscribe-duration {
+    font-size: 14px;
+  }
+
+  .subscribe-package-main .subscribe-save {
+    font-size: 16px;
+  }
+
+  .subscribe-package-main .subscribe-free-shipping {
+    font-size: 12px;
+  }
+
+  .subscribe-package-main .package-price-was {
+    font-size: 19px;
+  }
+
+  .tab-wrapper .nav-link {
+    font-size: 14px;
+  }
+
+  .community-photos .community-photo-item {
+    max-width: 75px;
+  }
+
+  .product-description-section .decription-heading {
+    font-size: 18px;
   }
 }
