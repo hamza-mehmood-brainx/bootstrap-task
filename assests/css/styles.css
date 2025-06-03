@@ -64,6 +64,10 @@ img {
   height: 100%;
   max-height: 100px;
 }
+
+.tab-wrapper {
+  min-height: 55px;
+}
 .swiper-wrapper .thumbnail-slide::before {
   content: "";
   position: absolute;
