@@ -257,6 +257,7 @@ img {
   height: 100%;
   width: 100%;
   font-size: 16px;
+  letter-spacing: 1px;
 }
 
 .product-package-plan-2 .most-popular-banner,
@@ -634,9 +635,9 @@ img {
   }
   .product-section-main .side-nav {
     width: 100%;
-    max-width: 15px;
+    max-width: 25px;
     height: 100%;
-    max-height: 40px;
+    max-height: 100px;
     cursor: pointer;
     z-index: 10;
   }
@@ -650,7 +651,7 @@ img {
   .side-nav .mobile-next,
   .side-nav .mobile-prev {
     color: var(--side-bar-swiper-color);
-    font-size: 30px;
+    font-size: 100px;
   }
 }
 
@@ -667,6 +668,9 @@ img {
   }
   .product-package-plan .product-package-plan-3 {
     margin-top: 10px;
+  }
+  .product-section-main .product-section-name {
+    font-size: 16px;
   }
 
   .feature-box-section {
@@ -743,5 +747,20 @@ img {
 
   .product-description-section .decription-heading {
     font-size: 18px;
+  }
+
+  .product-section {
+    border-top: 5px solid var(--primary-color);
+  }
+
+  .package-button-main .package-button {
+    font-size: 12px;
+    padding: 8px 0px;
+    border-radius: 5px;
+  }
+
+  .product-package-plan .subscribe-package-plan-1,
+  .product-package-plan .subscribe-package-plan-2 {
+    margin-top: 12px;
   }
 }
