@@ -763,4 +763,12 @@ img {
   .product-package-plan .subscribe-package-plan-2 {
     margin-top: 12px;
   }
+  .tooltip-wrapper .tooltip-main-heading {
+    font-size: 20px;
+  }
+  .tooltip-wrapper .subscribe-tooltip {
+    font-size: 15px;
+    line-height: 24px;
+    font-weight: 400;
+  }
 }
