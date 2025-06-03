@@ -154,12 +154,12 @@ img {
 .tooltip-wrapper:hover .subscribe-tooltip {
   display: block !important;
 }
-#purchaseTab .package-one-time {
+.package-purchase-plans .package-one-time {
   background-color: var(--primary-color);
   border-radius: 5px;
   color: var(--primary-color);
 }
-#purchaseTab .package-tab-fifty {
+.package-purchase-plans .package-tab-fifty {
   border: 2px solid var(--primary-color);
   border-radius: 5px;
   color: var(--primary-color);
@@ -255,11 +255,6 @@ img {
   font-size: 16px;
 }
 
-.package-button-main .package-button:hover,
-.package-button-main .package-button:focus,
-.package-button-main .package-button:active {
-  background-color: var(--secondary-color) !important;
-}
 .product-package-plan-2 .most-popular-banner,
 .subscribe-package-plan-3 .most-popular-banner {
   position: absolute;
@@ -312,7 +307,7 @@ img {
   font-weight: 900;
 }
 
-/* ******************Community Photos Styles****************** */
+/* Community Photos */
 .community-photos-carousel .community-photos {
   transition: transform 0.5s ease;
 }
@@ -377,24 +372,15 @@ img {
   font-size: 16px;
   font-weight: 500;
 }
-/* ******************Product Features Styles****************** */
+/* Product Features  */
 .product-review-videos .product-plus-points {
   padding-left: 70px;
 }
-.product-plus-points .product-plus-sub-heading,
-.product-plus-points .product-plus-item {
-  color: var(--product-plus-points-text-color);
-}
+
 .product-plus-points .product-plus-main-heading {
   color: var(--product-plus-points-text-color);
   font-size: 20px;
   letter-spacing: 2px;
-}
-.product-review-videos .features-row {
-  width: 100%;
-}
-.feature-main .feature-column {
-  padding-right: 1px;
 }
 .feature-column .icon-container {
   background-color: var(--white-color);
@@ -403,6 +389,13 @@ img {
   position: relative;
   top: 20px;
 }
+.product-review-videos .features-row {
+  width: 100%;
+}
+.feature-main .feature-column {
+  padding-right: 1px;
+}
+
 .icon-container .feature-icon {
   width: 100%;
   max-width: 45px;
@@ -415,6 +408,11 @@ img {
 }
 .feature-box .feature-text {
   font-size: 16px;
+}
+
+.product-plus-points .product-plus-sub-heading,
+.product-plus-points .product-plus-item {
+  color: var(--product-plus-points-text-color);
 }
 
 /* Product Description Section */
@@ -563,6 +561,7 @@ img {
   border-radius: 1000px;
   z-index: 9999;
 }
+
 @media screen and (max-width: 992px) {
   .customer-review-section .title-section .review-title {
     font-size: 32px;
