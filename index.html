@@ -35,17 +35,19 @@
         </ol>
     </nav>
 
-    <!-- Product Section -->
+    <!--Main Product Section -->
     <div class="product-section d-flex flex-column flex-md-row col-md-12">
-        <!-- Left Column -->
+        <!-- Product Image Carousel Section -->
         <div class="col-lg-6 px-0 px-sm-3">
             <div class="container">
                 <div class="row">
+                    <!-- Carousel Slides -->
                     <div class="col-lg-3 order-lg-1 order-2 thumbnail-col d-flex justify-content-center">
                         <div
                             class="d-flex flex-column align-items-center d-lg-block d-none position-relative product-container">
                             <div class="vertical-swiper-container position-relative">
-                                <div class="nav-custom prev d-flex align-items-center justify-content-center">
+                                <div
+                                    class="nav-custom prev d-flex align-items-center justify-content-center position-absolute start-50 translate-middle-x">
                                     <i class="fas fa-chevron-right swiper-right swipe-prev"></i>
                                 </div>
                                 <div
@@ -127,10 +129,10 @@
                                                 alt="Product thumbnail 15">
                                         </div>
                                     </div>
-                                    <span class="swiper-notification" aria-live="assertive" aria-atomic="true"></span>
                                 </div>
 
-                                <div class="nav-custom next d-flex align-items-center justify-content-center">
+                                <div
+                                    class="nav-custom next d-flex align-items-center justify-content-center position-absolute start-50 translate-middle-x">
                                     <i class="fas fa-chevron-right swiper-right swipe-next"></i>
                                 </div>
                             </div>
@@ -215,14 +217,16 @@
                 </div>
             </div>
         </div>
-        <!-- Right Column -->
+        <!-- Packages Section -->
         <div class="col-12 col-md-6 col-lg-6 product-section-wrapper">
+            <!-- Packages Heading -->
             <div class="product-packge-option">
                 <h1 class="text-center product-section-name mt-0">Choose Your Package</h1>
                 <p class="text-center product-section-option">Select your money-saving option below:</p>
             </div>
-            <!-- Tab Buttons -->
+            <!--Packages Tab Buttons -->
             <div class="row gx-0 mb-3 mb-md-5 package-purchase-plans" id="purchaseTab" role="tablist">
+                <!-- Purchase Button -->
                 <div class="col-6 pe-2 tab-wrapper">
                     <button class="nav-link w-100 h-100 py-2 py-md-2 text-white active package-tab package-one-time"
                         id="one-time-tab" data-bs-toggle="tab" data-bs-target="#one-time" type="button" role="tab"
@@ -230,11 +234,12 @@
                         One-Time Purchase
                     </button>
                 </div>
+                <!-- Subscribe Button -->
                 <div class="col-6 position-relative tab-wrapper">
                     <button class="nav-link w-100 h-100 px-2 py-2 py-md-2 package-tab-fifty" id="subscribe-tab"
                         data-bs-toggle="tab" data-bs-target="#subscribe" type="button" role="tab"
                         aria-controls="subscribe" aria-selected="false" tabindex="-1">
-                        Subscribe &amp; Save Up To 50%
+                        <span class="subscribe">Subscribe </span> Save Up To 50%
                     </button>
                     <span id="subscribe-help">
                     </span>
@@ -258,10 +263,11 @@
                     </div>
                 </div>
             </div>
-            <!-- Tab Content Section -->
+            <!-- Packages Tab Content Section -->
             <div class="tab-content" id="purchaseTabContent">
                 <div class="tab-pane show active" id="one-time" role="tabpanel" aria-labelledby="one-time-tab">
                     <div class="row product-package-plan gy-3">
+                        <!-- Purchase Plan 1 -->
                         <div class="col-12 col-md-12 col-lg-4 product-package-plan-1 p-0">
                             <div class=" py-2 d-flex flex-row flex-lg-column align-items-center text-center">
                                 <div class="d-block d-lg-none">
@@ -279,8 +285,12 @@
                                 </div>
                             </div>
                         </div>
+                        <!-- Purchase Plan 2 -->
                         <div class="col-12 col-md-12 col-lg-4 product-package-plan-2 p-0 position-relative">
-                            <div class="most-popular-banner text-center d-none d-lg-block">Most Popular</div>
+                            <div
+                                class="most-popular-banner text-center d-none d-lg-block position-absolute top-0 left-0">
+                                Most
+                                Popular</div>
                             <div class=" d-flex flex-row flex-lg-column align-items-center text-center">
                                 <div class="d-block d-lg-none">
                                     <img src="assests/images/buy-3-pack.avif" alt="Package Image" class="img-fluid">
@@ -296,7 +306,7 @@
                                         </div>
                                     </div>
                                     <div class="package-price-save">
-                                        <p class="mb-0">(Save 29%)</p>
+                                        <p class="mb-0 package-price-save-text">(Save 29%)</p>
                                     </div>
                                 </div>
                                 <div class="d-flex flex-column align-items-center package-button-main">
@@ -308,6 +318,7 @@
                                 </div>
                             </div>
                         </div>
+                        <!-- Purchase Plan 3 -->
                         <div class="col-12 col-md-12 col-lg-4 product-package-plan-3 p-0 p-lg-3 position-relative">
                             <div class="py-2 d-flex flex-row flex-lg-column align-items-center text-center">
                                 <div class="d-block d-lg-none">
@@ -324,7 +335,7 @@
                                         </div>
                                     </div>
                                     <div class="package-price-save">
-                                        <p class="mb-0">(Save 36%)</p>
+                                        <p class="mb-0 package-price-save-text">(Save 36%)</p>
                                     </div>
                                 </div>
                                 <div class="d-flex justify-content-center mt-lg-2 package-button-main">
@@ -339,6 +350,7 @@
                 </div>
                 <div class="tab-pane" id="subscribe" role="tabpanel" aria-labelledby="subscribe-tab">
                     <div class="row product-package-plan gy-3">
+                        <!-- Subscribe Plan 1 -->
                         <div class="col-12 col-md-12 col-lg-4 subscribe-package-plan-1 p-0">
                             <div class="d-flex flex-row flex-lg-column align-items-center  text-center">
                                 <div class="d-block d-lg-none">
@@ -366,6 +378,7 @@
                                 </div>
                             </div>
                         </div>
+                        <!-- Subscribe Plan 2 -->
                         <div class="col-12 col-md-12 col-lg-4 subscribe-package-plan-2 p-0">
                             <div class=" d-flex flex-row flex-lg-column align-items-center text-center">
                                 <div class="d-block d-lg-none">
@@ -393,8 +406,11 @@
                                 </div>
                             </div>
                         </div>
+                        <!-- Subscribe Plan 3 -->
                         <div class="col-12 col-md-12 col-lg-4 subscribe-package-plan-3 p-0 position-relative">
-                            <div class="most-popular-banner text-center d-none d-lg-block">Most Savings</div>
+                            <div
+                                class="most-popular-banner text-center d-none d-lg-block position-absolute top-0 left-0">
+                                Most Savings</div>
                             <div class="d-flex flex-row flex-lg-column align-items-center text-center">
                                 <div class="d-block d-lg-none">
                                     <img src="assests/images/buy-6-pack.avif" alt="Package Image" class="img-fluid">
@@ -425,6 +441,8 @@
                     </div>
                 </div>
             </div>
+
+            <!-- Community Photos Section -->
             <div class="container mb-5">
                 <div class="row">
                     <section class="col-12 mx-auto community-photos-section mt-5">
@@ -432,16 +450,18 @@
                             PHOTOS FROM THE #biotrust COMMUNITY
                         </h2>
                         <div class="position-relative community-carousel-container">
-                            <button class="community-arrow left-arrow">
+                            <!-- Carousel back button -->
+                            <button class="community-arrow left-arrow position-absolute top-0 bottom-0">
                                 <i class="bi bi-chevron-left fs-1"></i>
                             </button>
+                            <!-- Community Photos Carousel -->
                             <div class="community-photos-carousel overflow-hidden w-100">
                                 <div class="community-photos d-flex">
                                     <div class="community-photo-item position-relative overflow-hidden">
                                         <img src="assests/images/bottom-img-1.webp" alt="Community photo 1"
                                             class="img-fluid w-100">
                                         <div
-                                            class="photo-hover-overlay d-flex justify-content-center align-items-center">
+                                            class="photo-hover-overlay d-flex justify-content-center align-items-center position-absolute top-0 start-0">
                                             <i class="bi bi-instagram fs-1 text-white"></i>
                                         </div>
                                     </div>
@@ -449,7 +469,7 @@
                                         <img src="assests/images/bottom-img-2.webp" alt="Community photo 1"
                                             class="img-fluid w-100">
                                         <div
-                                            class="photo-hover-overlay d-flex justify-content-center align-items-center">
+                                            class="photo-hover-overlay d-flex justify-content-center align-items-center position-absolute top-0 start-0">
                                             <i class="bi bi-instagram fs-1 text-white"></i>
                                         </div>
                                     </div>
@@ -457,7 +477,7 @@
                                         <img src="assests/images/bottom-img-4.webp" alt="Community photo 1"
                                             class="img-fluid w-100">
                                         <div
-                                            class="photo-hover-overlay d-flex justify-content-center align-items-center">
+                                            class="photo-hover-overlay d-flex justify-content-center align-items-center position-absolute top-0 start-0">
                                             <i class="bi bi-instagram fs-1 text-white"></i>
                                         </div>
                                     </div>
@@ -465,7 +485,7 @@
                                         <img src="assests/images/bottom-img-5.webp" alt="Community photo 1"
                                             class="img-fluid w-100">
                                         <div
-                                            class="photo-hover-overlay d-flex justify-content-center align-items-center">
+                                            class="photo-hover-overlay d-flex justify-content-center align-items-center position-absolute top-0 start-0">
                                             <i class="bi bi-instagram fs-1 text-white"></i>
                                         </div>
                                     </div>
@@ -473,7 +493,7 @@
                                         <img src="assests/images/bottom-img-6.webp" alt="Community photo 1"
                                             class="img-fluid w-100">
                                         <div
-                                            class="photo-hover-overlay d-flex justify-content-center align-items-center">
+                                            class="photo-hover-overlay d-flex justify-content-center align-items-center position-absolute top-0 start-0">
                                             <i class="bi bi-instagram fs-1 text-white"></i>
                                         </div>
                                     </div>
@@ -481,7 +501,7 @@
                                         <img src="assests/images/bottom-img-7.webp" alt="Community photo 1"
                                             class="img-fluid w-100">
                                         <div
-                                            class="photo-hover-overlay d-flex justify-content-center align-items-center">
+                                            class="photo-hover-overlay d-flex justify-content-center align-items-center position-absolute top-0 start-0">
                                             <i class="bi bi-instagram fs-1 text-white"></i>
                                         </div>
                                     </div>
@@ -489,7 +509,7 @@
                                         <img src="assests/images/bottom-img-8.webp" alt="Community photo 1"
                                             class="img-fluid w-100">
                                         <div
-                                            class="photo-hover-overlay d-flex justify-content-center align-items-center">
+                                            class="photo-hover-overlay d-flex justify-content-center align-items-center position-absolute top-0 start-0">
                                             <i class="bi bi-instagram fs-1 text-white"></i>
                                         </div>
                                     </div>
@@ -497,7 +517,7 @@
                                         <img src="assests/images/bottom-img-9.webp" alt="Community photo 1"
                                             class="img-fluid w-100">
                                         <div
-                                            class="photo-hover-overlay d-flex justify-content-center align-items-center">
+                                            class="photo-hover-overlay d-flex justify-content-center align-items-center position-absolute top-0 start-0">
                                             <i class="bi bi-instagram fs-1 text-white"></i>
                                         </div>
                                     </div>
@@ -505,13 +525,14 @@
                                         <img src="assests/images/bottom-img-10.webp" alt="Community photo 1"
                                             class="img-fluid w-100">
                                         <div
-                                            class="photo-hover-overlay d-flex justify-content-center align-items-center">
+                                            class="photo-hover-overlay d-flex justify-content-center align-items-center position-absolute top-0 start-0">
                                             <i class="bi bi-instagram fs-1 text-white"></i>
                                         </div>
                                     </div>
                                 </div>
                             </div>
-                            <button class="community-arrow right-arrow">
+                            <!-- Carousel Next button -->
+                            <button class="community-arrow right-arrow position-absolute top-0 bottom-0">
                                 <i class="bi bi-chevron-right fs-1"></i>
                             </button>
                         </div>
@@ -544,31 +565,35 @@
 
     <!-- Feature box section -->
     <div class="feature-box-section row mt-5 gx-0 ">
+        <!-- Feature 1 -->
         <div
             class="single-feature-box col-6 col-md-3 d-flex flex-column align-items-center pb-4 ps-3  pe-3 pb-md-3 ps-md-4 pe-md-4 justify-content-center mx-auto">
-            <div class="feature-icon-wrapper"><img class="feature-icon"
+            <div class="feature-icon-wrapper position-relative"><img class="feature-icon"
                     src="./assests/images/60-day-money-back-guarantee.png" alt="icon"></div>
 
             <p class="feature-title text-uppercase text-center">60-Day Money Back Guarantee</p>
         </div>
+        <!-- Feature 2 -->
         <div
             class="single-feature-box col-6 d-flex col-md-3 flex-column align-items-center justify-content-center mx-auto pb-md-3 pb-4 ps-3 pe-3 ps-md-4 pe-md-4">
-            <div class="feature-icon-wrapper"><img class="feature-icon"
+            <div class="feature-icon-wrapper position-relative"><img class="feature-icon"
                     src="./assests/images/Complete_-5-Collagen-Protein.png" alt="icon"></div>
 
             <p class="feature-title text-uppercase text-center">Complete, 5-Collagen Protein</p>
         </div>
+        <!-- Feature 3 -->
         <div
             class="single-feature-box col-6 col-md-3 d-flex  flex-column align-items-center justify-content-center mx-auto pb-4 ps-3 pe-3 pb-md-3 ps-md-4 pe-md-4">
-            <div class="feature-icon-wrapper"><img class="feature-icon"
+            <div class="feature-icon-wrapper position-relative"><img class="feature-icon"
                     src="./assests/images/Hormone_-Glutena-and-Soy-Free_0cfd5c3d-c8a2-4659-ba48-bd631a05e7e5.png"
                     alt="icon"></div>
 
             <p class="feature-title text-uppercase text-center">Hormone & Gluten-Free & non-GMO</p>
         </div>
+        <!-- Feature 4 -->
         <div
             class="single-feature-box col-6 col-md-3  d-flex flex-column align-items-center justify-content-center mx-auto pb-4 ps-3 pe-3 pb-md-3 ps-md-4 pe-md-4">
-            <div class="feature-icon-wrapper"><img class="feature-icon"
+            <div class="feature-icon-wrapper position-relative"><img class="feature-icon"
                     src="./assests/images/never-clumps_609b1d6f-1c62-4cb9-8fe5-725c0dc114bb.png" alt="icon"></div>
 
             <p class="feature-title text-uppercase text-center">Never Clumps</p>
@@ -577,10 +602,12 @@
 
     <!--Featured Customer Review Section -->
     <div class=" customer-review-section row py-5 gx-0">
+        <!-- Tittle Secion -->
         <div class="title-section col-md-4 pe-md-5 mx-auto ">
             <h1 class="review-title text-uppercase text-center text-md-end ">FEATURED CUSTOMER REVIEW</h1>
             <h6 class="review-subtitle text-center text-md-end mb-4 mb-md-1">Read more reviews</h6>
         </div>
+        <!-- Review Section -->
         <div class="review-section col-md-8 text-center">
             <div class="review-rating mx-auto">
                 <img src="./assests/images/featured_review_stars_small.webp" alt="review-rating">
@@ -601,9 +628,11 @@
     <div class="row g-0 videos-section py-4">
         <div class="col-12 text-center">
             <h2 class="video-title mb-5 fw-bold text-white">Product Videos</h2>
+            <!-- Main Video 1 -->
             <div class="video-container mb-4 mx-auto">
-                <div class="video-wrapper">
-                    <iframe class="video-frame" title="Product Overview: BioTRUST Ageless Multi-Collagen Protein Powder"
+                <div class="video-wrapper position-relative">
+                    <iframe class="video-frame position-absolute top-0 start-0"
+                        title="Product Overview: BioTRUST Ageless Multi-Collagen Protein Powder"
                         alt="Video product overview on BioTRUST Ageless Multi-Collagen Protein Powder"
                         src="https://player.vimeo.com/video/299705286?playsinline=0" frameborder="0"
                         webkitallowfullscreen="" mozallowfullscreen="" allowfullscreen="" data-vimeo-tracked="true"
@@ -612,10 +641,12 @@
                 </div>
             </div>
             <div class="row g-0 mx-auto col-10">
+                <!-- Video 2 -->
                 <div class="col-md-6 col-12">
                     <div class="side-video-container mx-auto mb-4 mb-md-0 me-lg-5 text-center">
-                        <div class="video-wrapper">
-                            <iframe class="video-frame" title="Coaches Tips: Add Multi-Collagen to Your Morning Coffee"
+                        <div class="video-wrapper position-relative">
+                            <iframe class="video-frame position-absolute top-0 start-0"
+                                title="Coaches Tips: Add Multi-Collagen to Your Morning Coffee"
                                 alt="Video on coaches tips to add multi-collagen to your morning coffee"
                                 src="//player.vimeo.com/video/296462656?portrait=0&amp;title=0&amp;byline=0&amp;playsinline=0"
                                 frameborder="0" webkitallowfullscreen="" mozallowfullscreen="" allowfullscreen=""
@@ -624,10 +655,11 @@
                         </div>
                     </div>
                 </div>
+                <!-- Video 3 -->
                 <div class="col-md-6 col-12">
                     <div class="side-video-container mx-auto mt-3 mt-md-0 mb-4 mb-md-0 me-lg-5 text-center">
-                        <div class="video-wrapper">
-                            <iframe class="video-frame"
+                        <div class="video-wrapper position-relative">
+                            <iframe class="video-frame position-absolute top-0 start-0"
                                 title="Mixability Comparison: BioTRUST Collagen VS 'The Other Collagen'"
                                 alt="Video on mixability comparison on BioTRUST Collagen vs 'The Other Collagen'"
                                 src="//player.vimeo.com/video/296462747?portrait=0&amp;title=0&amp;byline=0&amp;?playsinline=0"
@@ -643,7 +675,8 @@
 
 
     <!-- Chat button -->
-    <a href="#" class="chat-button d-flex align-items-center justify-content-center text-decoration-none zindex-fixed">
+    <a href="#"
+        class="chat-button d-flex align-items-center justify-content-center position-fixed text-decoration-none zindex-fixed">
         <i class="bi bi-chat-fill me-2 fs-5"></i>
         <strong>Let's chat!</strong>
     </a>
@@ -655,7 +688,6 @@
             slidesPerView: 6,
             spaceBetween: 10,
             loop: true
-
         });
         const thumbnails = document.querySelectorAll('.thumbnail-slide');
         const mainImage = document.getElementById('mainImage');
@@ -711,12 +743,10 @@
             const subscribeBtn = document.getElementById('subscribe-tab');
             function setActive(btn) {
                 btn.classList.add('text-white', 'border-0');
-                btn.classList.remove('text-biotrust-primary');
                 btn.style.backgroundColor = '#0B4F9A';
             }
             function setInactive(btn) {
                 btn.classList.remove('text-white', 'border-0');
-                btn.classList.add('text-biotrust-primary');
                 btn.style.backgroundColor = '#fff';
                 btn.style.border = '2px solid #0B4F9A';
             }
