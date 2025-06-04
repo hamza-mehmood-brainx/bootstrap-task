@@ -138,6 +138,7 @@
                             </div>
                         </div>
                     </div>
+                    <!-- Carousel Images  -->
                     <div class="col-lg-9 order-lg-2 order-1">
                         <div class="product-section-main d-flex flex-column align-items-center">
                             <h1 class="product-section-name text-center text-uppercase  mt-md-0 mt-5">AGELESS
@@ -172,24 +173,13 @@
                                         allowfullscreen="" class="d-none p-4 sidebar-frame" style="display: none;">
                                     </iframe>
                                 </div>
-                                <div class="container-fluid d-flex justify-content-center align-items-center">
-                                    <div class="dots-nav gap-1 justify-content-center d-flex d-lg-none w-25">
-                                        <div class="dot active"></div>
-                                        <div class="dot"></div>
-                                        <div class="dot"></div>
-                                        <div class="dot"></div>
-                                        <div class="dot"></div>
-                                        <div class="dot"></div>
-                                        <div class="dot"></div>
-                                        <div class="dot"></div>
-                                        <div class="dot"></div>
-                                        <div class="dot"></div>
-                                        <div class="dot"></div>
-                                        <div class="dot"></div>
-                                        <div class="dot"></div>
-                                        <div class="dot"></div>
-                                        <div class="dot"></div>
+
+                                <div
+                                    class="container-fluid d-flex justify-content-center align-items-center position-relative">
+                                    <div
+                                        class="swiper-pagination d-flex d-lg-none width-100 justify-content-center w-100 gap-1">
                                     </div>
+
                                 </div>
                             </div>
                             <div class="d-lg-none d-md-block d-none mt-2 mb-3 text-center">
@@ -687,12 +677,16 @@
             direction: 'vertical',
             slidesPerView: 6,
             spaceBetween: 10,
-            loop: true
+            loop: true,
+            pagination: {
+                el: '.swiper-pagination',
+                clickable: true
+            }
         });
         const thumbnails = document.querySelectorAll('.thumbnail-slide');
         const mainImage = document.getElementById('mainImage');
         const iframe = document.getElementById('vimeo_product');
-        const dots = document.querySelectorAll('.dot');
+        const dots = document.querySelectorAll('.swiper-pagination-bullet');
         let currentIndex = 0;
         function updateImage(index) {
             if (index < 0) index = thumbnails.length - 1;

@@ -129,20 +129,7 @@ img {
 .next .swipe-next {
   transform: rotate(90deg);
 }
-.dots-nav .dot {
-  width: 100%;
-  min-width: 8px;
-  height: 100%;
-  min-height: 8px;
-  background-color: var(--indicator-dots-bg);
-  border-radius: 50%;
-  cursor: pointer;
-  transition: all 0.3s ease;
-}
-.dot.active {
-  background-color: var(--background-color);
-  transform: scale(1.2);
-}
+
 .product-section .tooltip-wrapper {
   z-index: 10;
 }
@@ -591,7 +578,7 @@ img {
     width: 100%;
     max-width: 25px;
     height: 100%;
-    max-height: 100px;
+    max-height: 50px;
     cursor: pointer;
     z-index: 10;
   }
@@ -605,7 +592,7 @@ img {
   .side-nav .mobile-next,
   .side-nav .mobile-prev {
     color: var(--side-bar-swiper-color);
-    font-size: 100px;
+    font-size: 50px;
   }
 }
 
